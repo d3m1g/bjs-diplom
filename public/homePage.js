@@ -22,7 +22,7 @@ function ratesUpdate() {
   }
  });
 }
-setInterval(ratesUpdate(), 60000);
+setInterval(ratesUpdate, 60000);
 
 const manager = new MoneyManager();
 manager.addMoneyCallback = replenBalance => ApiConnector.addMoney(replenBalance, response => {
